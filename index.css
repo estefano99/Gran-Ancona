@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* .fixed {
+    
+} */
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILOS GENERALES */
+
+.navbar {
+    background-color: #003143;
+    position: fixed;
+    transition: all 300ms;
+    height: 14vh;
+    line-height: 14vh;
+    padding: 0px;
+    z-index: 10;
+}
+
+.sticky {
+    height: 10vh ;
+    line-height: 10vh;
+    transition: all 300ms;
+    background-color: #003f56;
+}
+
+.logo-link {
+    width: 20%;
+    margin-left: 3%;
+}
+
+.nav-image {
+    width: 100%;
+    transition: all 300ms;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin-right: 5%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 0rem 1rem;
+    color: azure;
+}
+
+.nav-link:hover {
+    background-color: rgba(244, 244, 244, 0.085);
+    box-shadow: inset 0px 0px 10px rgba(244, 244, 244, 0.752);
+    color: aliceblue;
+}
+
+.sectionCarousel{
+    padding: 14vh 12vh;
+}
