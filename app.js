@@ -2,6 +2,7 @@
 const navbar = document.querySelector('.navbar');
 const nav_link = document.querySelector('.nav-link-imagen');
 const nav_image = document.querySelector('.nav-imagen');
+const cta_tienda = document.querySelector('.link-botton-banner');
 
 // Event Listeners
 
@@ -16,7 +17,13 @@ window.addEventListener('scroll', () => {
     }
 })
 
+cta_tienda.addEventListener('click', (e) => {
+    setTimeout(() => {
+        window.open('https://mercado.genganar.com/es/84_gran-ancona', '_blank');
+    }, 1000);
+})
 
+/* Funciones */
 function setSticky() {
     navbar.style.lineHeight = '11vh';
     nav_link.classList.remove('nav-link-imagen-chica');
