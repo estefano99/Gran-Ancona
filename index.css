@@ -152,6 +152,10 @@ p {
     background-attachment: fixed;
 }
 
+.div-destacado-p{
+    width: 100%;
+}
+
 .destacado-title{
     color: #f0f8ff;
     font-family: "Cormorant SC", serif;
@@ -204,7 +208,7 @@ p {
     background-position: top;
     background-attachment: fixed;
     box-shadow: 0px 0px 15px #252727;
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
     text-align: center;
 }
 
