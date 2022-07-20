@@ -4,18 +4,16 @@
 .mapouter {
     position: relative;
     text-align: right;
-    height: 45vh;
     width: 30%;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 45vh;
 }
 
 .gmap_iframe {
-    height: 45vh !important;
+    min-height: 300px !important;
 }
 
 * {
@@ -225,21 +223,28 @@ a {
 .link-botton-banner {
     position: relative;
     bottom: 37%;
+    transition: all .3s;
 }
 
 .link-botton-banner button {
     width: 22%;
     height: 10%;
     border-radius: 20px;
-    background-color: #A3C23D;
-    border: none;
-    color: #f1ffed;
-    font-size: calc(0.4rem + 1vw);
+    background-color: #005e00;
+    color: #e1f8da;
+    font-size: calc(0.3rem + 1vw);
+    font-family: var(--bs-body-font-family);
+    font-weight: 500;
     padding: 0;
 }
 
+.btn {
+    transition: all .3s;
+}
+
 .link-botton-banner button:hover {
-    background-color: #e4f6ab;
+    background-color: #e1f8da;
+    color: #012a3b;
 }
 
 /* Section Logros */
@@ -259,7 +264,7 @@ a {
 .mapa-redes {
     display: flex;
     flex-direction: row;
-    padding: 0 5vw;
+    padding: 0 3vw;
     width: 100%;
     gap: 2rem;
 }
@@ -267,11 +272,11 @@ a {
 .social-media {
     display: flex;
     flex-direction: column;
-    height: 45vh;
     width: 70%;
     padding: 2vh 2vw;
-    background-color: #09597a;
+    background-color: #012b3bc4;
     color: #f3ffef;
+    border-radius: 15px 0 0 15px; /* Le agregue un border-radius a la parte izquierda */
 }
 
 .social-media h3 {
@@ -280,17 +285,24 @@ a {
     text-align: center;
     padding-bottom: 2vh;
     margin-bottom: 3vh;
-    border-bottom: 1px solid #daffd0;
+    border-bottom: 1px solid #b0bbad;
+    font-family: "Cormorant SC", serif;
+}
+
+.contenedor-rows {
+    padding: 0;
+}
+
+.telefonos-row {
+    gap: 1rem;
+    margin: 0;
 }
 
 .div-nombres-p {
-    height: 8vh;
     align-items: center;
     gap: 1rem;
-}
-
-.div-nombres-p p{
-    font-size: calc(0.3rem + 1vw);
+    background-color: #0e0e184f;
+    box-shadow: 0 0 5px 3px #0e0e184f;
     margin: 0;
 }
 
@@ -304,51 +316,69 @@ a {
 .contacto {
     border-bottom: 1px solid #daffd0;
     padding-bottom: 2px;
+    font-size: calc(0.3rem + 1vw);
+    margin: 0;
 }
 
 .numero-mail {
+    width: 90%;
     display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
 }
 
 .numero-mail p {
-    font-size: calc(0.2rem + 1vw);
-    padding-right: 25px;
+    font-size: calc(0.1rem + 1vw);
 }
 
 .link-llamar{
     display: block;
-    width: 8vw;
-    height: 5vh;
-    line-height: 5vh;
+    width: 16vw;
+    height: 30px;
+    line-height: 30px;
     background-color: #e1f8da;
     color: #2f3535;
     border-radius: 25px;
     text-align: center;
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
-    padding: 0;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.link-llamar:hover {
+    background-color: #86979e;
+    color: #051820;
 }
 
 .link-llamar i {
-    padding-left: 15px;
+    padding-left: 10%;
+    transition: all .3s;
 }
 
 .link-wsp {
     display: block;
-    width: 10vw;
-    height: 5vh;
-    line-height: 5vh;
-    background-color: #25D366;
+    width: 11vw;
+    height: 30px;
+    line-height: 30px;
+    background-color: #076b2c;
     color: #e1f8da;
     border-radius: 25px;
     text-align: center;
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
-    padding: 0;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.link-wsp:hover {
+    background-color: #14a047;
+    color: #e1f8da;
 }
 
 .link-wsp i {
-    padding-left: 15px;
+    padding-left: 10%;
+    transition: all .3s;
 }
 
 .author {
@@ -429,14 +459,15 @@ a {
 
     .social-media {
         width: 100%;
+        border-radius: 0;
     }
 
     .link-llamar {
-        width: 15%;
+        width: 28%;
     }
 
     .link-wsp {
-        width: 15%;
+        width: 18%;
     }
 
     .mapouter {
@@ -453,7 +484,7 @@ a {
 
     .descripcion {
         background-position: right;
-        height: 70vh;
+        height: 55vh;
         margin-bottom: 0;
     }
 
@@ -467,4 +498,29 @@ a {
         width: 100%;
         clip-path: none;
     }
+
+    /* DESTACADO */
+    .destacado-feature {
+        width: 13%;
+    }
+
+    .destacado-title {
+        background-color: #010b0fe0;
+        box-shadow: 0px 5px 15px #222424;
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+    .destacado-card {
+        height: 10vh;
+    }
+
+    /* CONTACTO */
+    /* .link-llamar {
+        width: 17%;
+    }
+
+    .link-wsp {
+        width: 22%;
+    } */
 }
