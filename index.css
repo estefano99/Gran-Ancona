@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Ibarra+Real+Nova&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600;700&family=Ibarra+Real+Nova&family=Poppins&display=swap");
 
 /* MAPA */
 .mapouter {
     position: relative;
     text-align: right;
     height: 45vh;
+    width: 30%;
 }
+
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 45vh;
 }
+
 .gmap_iframe {
     height: 45vh !important;
 }
@@ -28,6 +31,8 @@ body {
 
 a {
     text-decoration: none;
+    font-family: "Cormorant SC", serif;
+    color: rgba(255, 255, 255, 0.658);
 }
 
 /* ESTILOS GENERALES */
@@ -76,8 +81,6 @@ a {
 .navbar-dark .navbar-nav .nav-link {
     padding: 0rem 1rem;
     font-size: calc(0.4rem + 1vw);
-    color: rgba(255, 255, 255, 0.658);
-    font-family: "Cormorant SC", serif;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -90,16 +93,14 @@ a {
     margin-right: 4vw;
 }
 
-/* Section Descripcion */
 
+/* Section Descripcion */
 .descripcion {
     height: 70vh;
     background: rgb(52, 52, 82);
-    background: linear-gradient(
-            140deg,
+    background: linear-gradient(140deg,
             rgba(32, 39, 51, 0.912) 13%,
-            rgba(32, 43, 42, 0.732) 60%
-        ),
+            rgba(32, 43, 42, 0.732) 60%),
         url(/imagenes/tranquera.jpeg);
     background-size: cover;
     background-position: center;
@@ -113,7 +114,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 85%;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .titulo {
@@ -129,28 +130,116 @@ a {
     font-family: "Ibarra Real Nova", serif;
 }
 
+/* DESTACADO */
+.destacado {
+    width: 90vw;
+    padding: 0;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #bae2f4;
+    align-items: center;
+    background: rgb(52, 52, 82);
+    background: linear-gradient(140deg,
+            rgba(32, 39, 51, 0.912) 13%,
+            rgba(32, 43, 42, 0.732) 60%),
+        url(/imagenes/destacada1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.div-destacado-p{
+    width: 100%;
+}
+
+.destacado-title{
+    color: #f0f8ff;
+    font-family: "Cormorant SC", serif;
+    background-color: #010b0fb1;
+    box-shadow: 0px 5px 15px #222424;
+    width: 100%;
+    height: 14vh;
+    line-height: 14vh;
+    text-align: center;
+}
+
+.destacado-feature {
+    width: 5%;
+}
+
+.destacado-card {
+    display: flex;
+    width: 90%;
+    height: 17vh;
+    background-color: #ebffe5;
+    border: 2px solid #094057;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destacado-img {
+    height: 100%;
+}
+
+.derecha {
+    flex-direction: row-reverse;
+}
+
+.destacado-p {
+    font-size: calc(0.5rem + 1vw);
+    padding: calc(0.2rem + 1%);
+}
+
 /* BANNER */
 .banner-tienda {
     margin-top: 15vh;
     display: flex;
     justify-content: center;
-    max-height: 60vh;
-    background: linear-gradient(
-            140deg,
+    max-height: 65vh;
+    background: linear-gradient(140deg,
             rgba(32, 39, 51, 0.912) 13%,
-            rgba(32, 43, 42, 0.732) 60%
-        ),
+            rgba(32, 43, 42, 0.732) 60%),
         url(/imagenes/vacas-pocas-2.jpeg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
     box-shadow: 0px 0px 15px #252727;
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
+    text-align: center;
+}
+
+.div-banner-imagen {
+    width: 80%;
 }
 
 .banner-image1 {
-    width: 80%;
+    width: 100%;
+    height: 100%;
     clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+}
+
+.link-botton-banner {
+    position: relative;
+    bottom: 37%;
+}
+
+.link-botton-banner button {
+    width: 22%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #A3C23D;
+    border: none;
+    color: #f1ffed;
+    font-size: calc(0.4rem + 1vw);
+    padding: 0;
+}
+
+.link-botton-banner button:hover {
+    background-color: #e4f6ab;
 }
 
 /* Section Logros */
@@ -179,19 +268,87 @@ a {
     display: flex;
     flex-direction: column;
     height: 45vh;
-    width: 80%;
+    width: 70%;
     padding: 2vh 2vw;
     background-color: #09597a;
-    color: #daffd0;
+    color: #f3ffef;
 }
 
-.social-media h3{
+.social-media h3 {
     align-self: center;
     width: 100%;
     text-align: center;
     padding-bottom: 2vh;
     margin-bottom: 3vh;
     border-bottom: 1px solid #daffd0;
+}
+
+.div-nombres-p {
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-nombres-p p{
+    font-size: calc(0.3rem + 1vw);
+    margin: 0;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto {
+    border-bottom: 1px solid #daffd0;
+    padding-bottom: 2px;
+}
+
+.numero-mail {
+    display: flex;
+}
+
+.numero-mail p {
+    font-size: calc(0.2rem + 1vw);
+    padding-right: 25px;
+}
+
+.link-llamar{
+    display: block;
+    width: 8vw;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: #e1f8da;
+    color: #2f3535;
+    border-radius: 25px;
+    text-align: center;
+    font-family: var(--bs-body-font-family);
+    font-size: calc(0.3rem + 1vw);
+    padding: 0;
+}
+
+.link-llamar i {
+    padding-left: 15px;
+}
+
+.link-wsp {
+    display: block;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: #25D366;
+    color: #e1f8da;
+    border-radius: 25px;
+    text-align: center;
+    font-family: var(--bs-body-font-family);
+    font-size: calc(0.3rem + 1vw);
+    padding: 0;
+}
+
+.link-wsp i {
+    padding-left: 15px;
 }
 
 .author {
@@ -239,7 +396,53 @@ a {
         padding: 0 0 0 1rem;
     }
 
- 
+    .sectionCarousel {
+        padding: 16vh 0 12vh;
+    }
+
+    .destacado {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .banner-tienda {
+        box-shadow: none;
+    }
+
+    .link-botton-banner {
+        bottom: 39%;
+    }
+
+    .div-banner-imagen {
+        width: 100%;
+    }
+
+    .footer {
+        padding-top: 5vh;
+        gap: 0;
+    }
+
+    .mapa-redes {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .link-llamar {
+        width: 15%;
+    }
+
+    .link-wsp {
+        width: 15%;
+    }
+
+    .mapouter {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -254,16 +457,12 @@ a {
         margin-bottom: 0;
     }
 
-    .sectionCarousel {
-        padding: 16vh 6vw 10vh;
-    }
-
     .banner-tienda {
         background: none;
         margin: 10vh 0;
         height: 25vh;
     }
-    
+
     .banner-image1 {
         width: 100%;
         clip-path: none;
