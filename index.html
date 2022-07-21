@@ -29,21 +29,27 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="index.css" />
-    <title>Gran Ancona - Crianza de ganadería</title>
+    <title>Gran Ancona - La naturaleza hecha carne - Mansedumbre y Genetica en animales de campo</title>
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar navbar-dark">
         <div class="container-fluid">
+
+            <!-- Logo de la navbar -->
             <a href="#" class="nav-link-imagen">
                 <img src="./imagenes/logo.jpeg" alt="Logo-empresa" class="nav-imagen" />
             </a>
 
+            <!-- Toggle button para dispositivos mobiles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -130,30 +136,35 @@
         <article class="info-empresa">
             <h1 class="titulo">Gran Ancona</h1>
             <p class="parrafo">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-                vero! Dolore, sunt rem animi dolor dignissimos dicta dolorum, veniam
-                molestiae ullam sequi obcaecati pariatur, fuga consequuntur non
-                voluptatibus ducimus. Iste animi provident unde quia. Consectetur
-                accusantium quibusdam accusamus nesciunt nulla, molestiae quae,
-                dolorem praesentium temporibus voluptatem laboriosam consequuntur
-                exercitationem. Deleniti dignissimos quia, quod suscipit consectetur
-                eaque asperiores adipisci quo quibusdam.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum, vero! Dolore, sunt rem animi dolor dignissimos
+                dicta dolorum, veniam molestiae ullam sequi obcaecati
+                pariatur, fuga consequuntur non voluptatibus ducimus. Iste
+                animi provident unde quia. Consectetur accusantium quibusdam
+                accusamus nesciunt nulla, molestiae quae, dolorem
+                praesentium temporibus voluptatem laboriosam consequuntur
+                exercitationem. Deleniti dignissimos quia, quod suscipit
+                consectetur eaque asperiores adipisci quo quibusdam.
             </p>
         </article>
     </section>
 
-    <!-- Destacado -->
+    <!-- DESTACADO -->
     <section class="destacado container-fluid">
+
+        <!-- Titulo de seccion destacado -->
         <h2 class="destacado-title">
             <img class="destacado-feature" src="/imagenes/feature.png" alt="icon-feature" />
             En que nos destacamos
         </h2>
+
+        <!-- Aca arrancan las cards -->
         <article class="destacado-card">
             <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
-                    La alimentación de nuestros animales esta basada complemante en
-                    alfalfa.
+                    La alimentación de nuestros animales esta basada
+                    complemante en alfalfa.
                 </p>
             </div>
         </article>
@@ -162,7 +173,8 @@
             <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
-                    ITF: Inseminación a tiempo a fijo --------- Compltear....
+                    ITF: Inseminación a tiempo a fijo ---------
+                    Compltear....
                 </p>
             </div>
         </article>
@@ -171,8 +183,8 @@
             <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tempora
-                    ipsa quisquam autem officia impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Ut tempora ipsa quisquam autem officia impedit.
                 </p>
             </div>
         </article>
@@ -182,42 +194,62 @@
     <section class="banner-tienda container-fluid p-0">
         <div class="div-banner-imagen">
             <img src="/imagenes/banner.jpeg" alt="banner-tienda" class="banner-image1" />
-            <a class="link-botton-banner"><button type="button" class="btn">Ir a la tienda</button></a>
+            <a class="link-botton-banner"><button type="button" class="btn">
+                    Ir a la tienda
+                </button></a>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
+
+        <!-- Contenedor de los contactos y el mapa -->
         <div class="mapa-redes">
+
+            <!-- Contactos -->
             <div class="social-media">
                 <h3>Contactos</h3>
-                <div class="container-fluid">
-                <div class="row">
-                    <div class="row div-nombres-p">
-                        <div class="col-7 contactos">
-                            <p class="contacto">Telefono oficina</p>
-                            <div class="numero-mail">
-                                <p>- Tel. Fijo: 3465-497018</p>
-                                <p>- Mail: dasdsadasdadas</p>
+                <div class="container-fluid contenedor-rows">   <!-- Le saque el padding con esta clase -->
+                    <div class="row telefonos-row">             <!-- Le puse gap a cada elemento dentro de esta row -->
+
+                        <div class="row div-nombres-p">
+                            <div class="col-5 contactos">
+                                <p class="contacto">Telefono oficina</p>
+                                <div class="numero-mail">
+                                    <!-- <p>- Tel. Fijo: 3465-497018</p> -->
+                                </div>
                             </div>
+                            <a href="" class="col-1 link-llamar">Fijo: 3465-497018<i class="fa-solid fa-phone"></i></a>
                         </div>
-                        <a href="" class="col-1 link-llamar">Llamar<i class="fa-solid fa-phone"></i></a>
-                        <a href="" class="col-1 link-wsp">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                    <div class="row div-nombres-p">
-                        <p class="col-7">- Ing. Jorge Tanoni - Cel: 3465-655542</p>
-                        <a href="" class="col-1 link-llamar">Llamar<i class=" fa-solid fa-phone"></i></a>
-                        <a href="" class="col-1 link-wsp">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                    <div class="row div-nombres-p">
-                        <p class="col-7">- Roque Avila - Cel: 3465-654378</p>
-                        <a href="" class="col-1 link-llamar">Llamar<i class=" fa-solid fa-phone"></i></a>
-                        <a href="" class="col-1 link-wsp">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
+
+                        <div class="row div-nombres-p">
+                            <div class="col-5 contactos">
+                                <p class="contacto">Ing. Jorge Tanoni</p>
+                                <div class="numero-mail">
+                                    <!-- <p>- Cel: 3465-655542</p> -->
+                                    <i class="fa-solid fa-envelope"><a href="" class="mail">jtanoni@tanoni.com.ar</a></i>
+                                </div>
+                            </div>
+                            <a href="" class="col-1 link-llamar">Cel: 3465-655542<i class="fa-solid fa-phone"></i></a>
+                            <a href="" class="col-1 link-wsp">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+
+                        <div class="row div-nombres-p">
+                            <div class="col-5 contactos">
+                                <p class="contacto">Roque Avila</p>
+                                <div class="numero-mail">
+                                    <!-- <p>- Cel: 3465-654378</p> -->
+                                    <i class="fa-solid fa-envelope"><a href="" class="mail">avilaroque@hotmail.com</a></i>
+                                </div>
+                            </div>
+                            <a href="" class="col-1 link-llamar">Cel: 3465-654378<i class="fa-solid fa-phone"></i></a>
+                            <a href="" class="col-1 link-wsp">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
 
+            <!-- Mapa -->
             <div class="mapouter">
                 <div class="gmap_canvas">
                     <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
@@ -227,8 +259,11 @@
             </div>
         </div>
 
+        <!-- Derechos de autor -->
         <div class="author">
-            <p class="copyright m-0">Derechos reservados al Duo dinamico &copy;</p>
+            <p class="copyright m-0">
+                Derechos reservados al Duo dinamico &copy;
+            </p>
         </div>
     </footer>
 

@@ -4,24 +4,27 @@
 .mapouter {
     position: relative;
     text-align: right;
-    height: 45vh;
     width: 30%;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 45vh;
 }
 
 .gmap_iframe {
-    height: 45vh !important;
+    min-height: 300px !important;
 }
 
+/* Universales */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -159,7 +162,7 @@ a {
 .destacado-title{
     color: #f0f8ff;
     font-family: "Cormorant SC", serif;
-    background-color: #010b0fb1;
+    background-color: #010b0fe0;
     box-shadow: 0px 5px 15px #222424;
     width: 100%;
     height: 14vh;
@@ -225,21 +228,28 @@ a {
 .link-botton-banner {
     position: relative;
     bottom: 37%;
+    transition: all .3s;
 }
 
 .link-botton-banner button {
     width: 22%;
     height: 10%;
     border-radius: 20px;
-    background-color: #A3C23D;
-    border: none;
-    color: #f1ffed;
-    font-size: calc(0.4rem + 1vw);
+    background-color: #417703;
+    color: #f0f8ff;
+    font-size: calc(0.3rem + 1vw);
+    font-family: var(--bs-body-font-family);
+    font-weight: 500;
     padding: 0;
 }
 
+.btn {
+    transition: all .3s;
+}
+
 .link-botton-banner button:hover {
-    background-color: #e4f6ab;
+    background-color: #e1f8da;
+    color: #012a3b;
 }
 
 /* Section Logros */
@@ -259,7 +269,7 @@ a {
 .mapa-redes {
     display: flex;
     flex-direction: row;
-    padding: 0 5vw;
+    padding: 0 3vw;
     width: 100%;
     gap: 2rem;
 }
@@ -267,11 +277,11 @@ a {
 .social-media {
     display: flex;
     flex-direction: column;
-    height: 45vh;
     width: 70%;
     padding: 2vh 2vw;
-    background-color: #09597a;
+    background-color: #012b3bc4;
     color: #f3ffef;
+    border-radius: 15px 0 0 15px; /* Le agregue un border-radius a la parte izquierda */
 }
 
 .social-media h3 {
@@ -280,17 +290,24 @@ a {
     text-align: center;
     padding-bottom: 2vh;
     margin-bottom: 3vh;
-    border-bottom: 1px solid #daffd0;
+    border-bottom: 1px solid #b0bbad;
+    font-family: "Cormorant SC", serif;
+}
+
+.contenedor-rows {
+    padding: 0;
+}
+
+.telefonos-row {
+    gap: 1rem;
+    margin: 0;
 }
 
 .div-nombres-p {
-    height: 8vh;
     align-items: center;
     gap: 1rem;
-}
-
-.div-nombres-p p{
-    font-size: calc(0.3rem + 1vw);
+    background-color: #0e0e184f;
+    box-shadow: 0 0 5px 3px #0e0e184f;
     margin: 0;
 }
 
@@ -303,52 +320,82 @@ a {
 
 .contacto {
     border-bottom: 1px solid #daffd0;
-    padding-bottom: 2px;
+    font-size: calc(0.3rem + 1vw);
+    margin: 0;
+    padding: 0 3% 2px 3%;
 }
 
 .numero-mail {
+    width: 90%;
     display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding-bottom: 15px;
 }
 
 .numero-mail p {
     font-size: calc(0.2rem + 1vw);
-    padding-right: 25px;
+}
+
+.mail {
+    font-family: var(--bs-body-font-family);
+    font-size: calc(0.2rem + 1vw);
+    font-weight: 100;
+    padding-left: 10%;
+}
+
+.fa-envelope {
+    font-size: calc(0.2rem + 1vw);
 }
 
 .link-llamar{
     display: block;
-    width: 8vw;
-    height: 5vh;
-    line-height: 5vh;
+    width: 16vw;
+    height: 30px;
+    line-height: 30px;
     background-color: #e1f8da;
     color: #2f3535;
     border-radius: 25px;
     text-align: center;
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
-    padding: 0;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.link-llamar:hover {
+    background-color: #86979e;
+    color: #051820;
 }
 
 .link-llamar i {
-    padding-left: 15px;
+    padding-left: 10%;
+    transition: all .3s;
 }
 
 .link-wsp {
     display: block;
-    width: 10vw;
-    height: 5vh;
-    line-height: 5vh;
-    background-color: #25D366;
+    width: 11vw;
+    height: 30px;
+    line-height: 30px;
+    background-color: #076b2c;
     color: #e1f8da;
     border-radius: 25px;
     text-align: center;
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
-    padding: 0;
+    padding: 0 5px;
+    transition: all .3s;
+}
+
+.link-wsp:hover {
+    background-color: #14a047;
+    color: #e1f8da;
 }
 
 .link-wsp i {
-    padding-left: 15px;
+    padding-left: 10%;
+    transition: all .3s;
 }
 
 .author {
@@ -361,13 +408,16 @@ a {
     align-items: center;
 }
 
-/* MEDIA QUERIES */
 
+/*** MEDIA QUERIES ***/
+
+/** Max-width 765px **/
 @media (max-width: 765px) {
     .sticky {
         line-height: 8vh;
     }
 
+    /* Navbar */
     .nav-link-imagen {
         width: 30vw;
         margin-left: 5vw;
@@ -396,15 +446,18 @@ a {
         padding: 0 0 0 1rem;
     }
 
+    /* Carrusel */
     .sectionCarousel {
         padding: 16vh 0 12vh;
     }
 
+    /* Destacado */
     .destacado {
         width: 100%;
         box-shadow: none;
     }
 
+    /* Banner tienda */
     .banner-tienda {
         box-shadow: none;
     }
@@ -417,6 +470,7 @@ a {
         width: 100%;
     }
 
+    /* Footer */
     .footer {
         padding-top: 5vh;
         gap: 0;
@@ -429,14 +483,16 @@ a {
 
     .social-media {
         width: 100%;
+        border-radius: 0;
+        padding: 2vh 0;
     }
 
     .link-llamar {
-        width: 15%;
+        width: 29%;
     }
 
     .link-wsp {
-        width: 15%;
+        width: 19%;
     }
 
     .mapouter {
@@ -445,18 +501,23 @@ a {
 
 }
 
+/** Max-width 500px **/
 @media (max-width: 500px) {
+
+    /* Navbar */
     .nav-link-imagen {
         width: 40vw;
         margin-left: 3vw;
     }
 
+    /* Descripcion */
     .descripcion {
         background-position: right;
-        height: 70vh;
+        height: 55vh;
         margin-bottom: 0;
     }
 
+    /* Banner tienda */
     .banner-tienda {
         background: none;
         margin: 10vh 0;
@@ -466,5 +527,21 @@ a {
     .banner-image1 {
         width: 100%;
         clip-path: none;
+    }
+
+    /* Destacado */
+    .destacado-feature {
+        width: 13%;
+    }
+
+    .destacado-title {
+        background-color: #010b0fe0;
+        box-shadow: 0px 5px 15px #222424;
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+    .destacado-card {
+        height: 10vh;
     }
 }
