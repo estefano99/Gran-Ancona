@@ -18,6 +18,7 @@ window.addEventListener('scroll', () => {
 })
 
 cta_tienda.addEventListener('click', (e) => {
+
     setTimeout(() => {
         window.open('https://mercado.genganar.com/es/84_gran-ancona', '_blank');
     }, 1000);

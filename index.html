@@ -22,12 +22,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="./imagenes/favicons/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="imagenes/favicons/manifest.json" />
     <script src="https://kit.fontawesome.com/4af9d744f8.js" crossorigin="anonymous"></script>
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="./imagenes/favicons/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
+<!--     <link rel="stylesheet" href="magic.css">
+    <link rel="stylesheet" href="magic.css.map"> -->
     <link rel="stylesheet" href="index.css" />
     <title>Gran Ancona - La naturaleza hecha carne - Mansedumbre y Genetica en animales de campo</title>
 </head>
@@ -56,13 +58,13 @@
                         <a class="nav-link" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Catalogo</a>
+                        <a class="nav-link" href="#section-destacado">Destacado</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logros</a>
+                        <a class="nav-link" href="#section-logros">Logros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#section-contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -150,7 +152,7 @@
     </section>
 
     <!-- DESTACADO -->
-    <section class="destacado container-fluid">
+    <section class="destacado container-fluid" id="section-destacado">
 
         <!-- Titulo de seccion destacado -->
         <h2 class="destacado-title">
@@ -160,7 +162,7 @@
 
         <!-- Aca arrancan las cards -->
         <article class="destacado-card">
-            <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
+            <img class="destacado-img" src="/imagenes/certified-removebg-preview.png" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
                     La alimentación de nuestros animales esta basada
@@ -170,7 +172,7 @@
         </article>
 
         <article class="destacado-card derecha">
-            <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
+            <img class="destacado-img img-derecha" src="/imagenes/certified-removebg-preview.png" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
                     ITF: Inseminación a tiempo a fijo ---------
@@ -180,7 +182,7 @@
         </article>
 
         <article class="destacado-card">
-            <img class="destacado-img" src="/imagenes/brutal.jpeg" alt="" />
+            <img class="destacado-img" src="/imagenes/certified-removebg-preview.png" alt="" />
             <div class="div-destacado-p">
                 <p class="destacado-p">
                     Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -191,17 +193,15 @@
     </section>
 
     <!-- BANNER TIENDA -->
-    <section class="banner-tienda container-fluid p-0">
+    <section class="banner-tienda container-fluid p-0" id="section-banner-tienda">
         <div class="div-banner-imagen">
-            <img src="/imagenes/banner.jpeg" alt="banner-tienda" class="banner-image1" />
-            <a class="link-botton-banner"><button type="button" class="btn">
-                    Ir a la tienda
-                </button></a>
+            <img src="/imagenes/banner.jpg" alt="banner-tienda" class="banner-image1" />
+            <a class="link-botton-banner"><button type="button" class="btn">Ir a la tienda<i class="fa-solid fa-arrow-right"></i></button></a>
         </div>
     </section>
 
     <!-- LOGROS -->
-    <section class="logros container-fluid">
+    <section class="logros container-fluid" id="section-logros">
         
         <div class="contenedor-foto-cards">
 
@@ -234,7 +234,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="section-contacto">
 
         <!-- Contenedor de los contactos y el mapa -->
         <div class="mapa-redes">
@@ -292,6 +292,11 @@
             </div>
         </div>
 
+        <!-- Boton de WPP Fijo -->
+        <div class="btn-fijo-wpp">
+            <a href="#" class="link-btn--fijo-wpp"><i class="fa-brands fa-whatsapp"></i>Contáctanos</a>
+        </div>
+
         <!-- Derechos de autor -->
         <div class="author">
             <p class="copyright m-0">
@@ -299,10 +304,12 @@
             </p>
         </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="/app.js"></script>
 </body>
 
