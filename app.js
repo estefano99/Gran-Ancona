@@ -4,6 +4,7 @@ const nav_link = document.querySelector('.nav-link-imagen');
 const nav_image = document.querySelector('.nav-imagen');
 const cta_tienda = document.querySelector('.link-botton-banner');
 const logo_hereford = document.querySelector('.logo-hereford');
+const logo_cabana = document.querySelector('.logo-cabana');
 
 // Event Listeners
 
@@ -28,9 +29,11 @@ cta_tienda.addEventListener('click', (e) => {
 /* Funciones */
 function setSticky() {
     /* navbar.style.lineHeight = '100px'; */
-    navbar.classList.add('navbar-chica')
+    navbar.classList.add('navbar-chica');
     /* logo_hereford.style.width = '6%' */
-    logo_hereford.classList.add('logo-hereford-chico')
+    logo_hereford.classList.add('logo-hereford-chico');
+    logo_cabana.classList.add('logo-cabana-chico');
+
     nav_link.classList.remove('nav-link-imagen-chica');
     nav_link.classList.add('nav-link-imagen-chica');
     navbar.style.backgroundColor = '#012b3b';
@@ -38,9 +41,11 @@ function setSticky() {
 
 function setFixed() {
     /* navbar.style.lineHeight = '150px'; */
-    navbar.classList.remove('navbar-chica')
+    navbar.classList.remove('navbar-chica');
     /* logo_hereford.style.width = '10%'; */
-    logo_hereford.classList.remove('logo-hereford-chico')
+    logo_hereford.classList.remove('logo-hereford-chico');
+    logo_cabana.classList.remove('logo-cabana-chico');
+
     nav_link.classList.remove('nav-link-imagen-chica');
     nav_link.classList.add('nav-link-imagen');
     navbar.style.backgroundColor = '#012c3bf5';
