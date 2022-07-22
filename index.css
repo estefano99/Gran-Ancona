@@ -508,8 +508,8 @@ a {
 .btn-fijo-wpp{
     display: block;
     left: 84%;
-    width: 15vw;
-    height: 6vh;
+    width: 12vw;
+    height: 40px;
     background-color: #076b2c;
     color: #e1f8da;
     border-radius: 25px;
@@ -738,9 +738,9 @@ a {
     }
 
     .btn-fijo-wpp{
-        line-height: 30px;
-        width: 18vw;
-        height: 4vh;
+        line-height: 25px;
+        width: 20vw;
+        height: 3vh;
         left: 80%;
     }
 
