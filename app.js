@@ -5,7 +5,8 @@ const nav_image = document.querySelector('.nav-imagen');
 const cta_tienda = document.querySelector('.link-botton-banner');
 const logo_hereford = document.querySelector('.logo-hereford');
 const logo_cabana = document.querySelector('.logo-cabana');
-
+const btn_fijo_wpp = document.querySelector('.btn-fijo-wpp');
+const btn_celu_wpp = document.querySelector('.btn-celu-wpp');
 // Event Listeners
 
 window.addEventListener('scroll', () => {
@@ -16,6 +17,15 @@ window.addEventListener('scroll', () => {
         setSticky();
     } else if(y <= 85 && x >= 769){
         setFixed();
+    }
+
+    //Para activar el icono de wpp para celulares
+    if (x <= 500) {
+        btn_fijo_wpp.style.display = "none";
+        btn_celu_wpp.style.display = "block";
+    }else{
+        btn_fijo_wpp.style.display = "block";
+        btn_celu_wpp.style.display = "none";
     }
 })
 
@@ -50,3 +60,5 @@ function setFixed() {
     nav_link.classList.add('nav-link-imagen');
     navbar.style.backgroundColor = '#012c3bf5';
 }
+
+
