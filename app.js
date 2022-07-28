@@ -7,25 +7,20 @@ const logo_hereford = document.querySelector('.logo-hereford');
 const logo_cabana = document.querySelector('.logo-cabana');
 const btn_fijo_wpp = document.querySelector('.btn-fijo-wpp');
 const btn_celu_wpp = document.querySelector('.btn-celu-wpp');
+
+let x = window.innerWidth;
+
 // Event Listeners
+
+document.addEventListener('DOMContentLoaded', reconocerDispositivo)
 
 window.addEventListener('scroll', () => {
     let y = scrollY;
-    let x = window.innerWidth;
 
     if(y >= 85 && x >= 769) {
         setSticky();
     } else if(y <= 85 && x >= 769){
         setFixed();
-    }
-
-    //Para activar el icono de wpp para celulares
-    if (x <= 500) {
-        btn_fijo_wpp.style.display = "none";
-        btn_celu_wpp.style.display = "block";
-    }else{
-        btn_fijo_wpp.style.display = "block";
-        btn_celu_wpp.style.display = "none";
     }
 })
 
@@ -37,6 +32,18 @@ cta_tienda.addEventListener('click', (e) => {
 })
 
 /* Funciones */
+
+function reconocerDispositivo() {
+    //Para activar el icono de wpp para celulares
+    if (x <= 500) {
+        btn_fijo_wpp.style.display = "none";
+        btn_celu_wpp.style.display = "block";
+    }else{
+        btn_fijo_wpp.style.display = "block";
+        btn_celu_wpp.style.display = "none";
+    }
+}
+
 function setSticky() {
     /* navbar.style.lineHeight = '100px'; */
     navbar.classList.add('navbar-chica');
