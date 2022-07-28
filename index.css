@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600;700&family=Ibarra+Real+Nova:wght@400;600&family=Oswald:wght@300;400&family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600;700&family=Ibarra+Real+Nova:wght@400;600&family=Oswald:wght@300;400&family=Poppins&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 
 /* MAPA */
 .mapouter {
     position: relative;
     text-align: right;
     width: 30%;
-    height: 320px
+    height: 320px;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 320px
+    height: 320px;
 }
 
 .gmap_iframe {
@@ -45,7 +45,12 @@ a {
 
 .sectionCarousel {
     background: rgb(31, 31, 47);
-    background: linear-gradient(269deg, rgba(15, 15, 27, 0.87) 100%, rgba(153, 238, 227, 0.288) 77%), url(/imagenes/nuevas\ imagenes/vacas4.jpg);
+    background: linear-gradient(
+            269deg,
+            rgba(15, 15, 27, 0.87) 100%,
+            rgba(153, 238, 227, 0.288) 77%
+        ),
+        url(/imagenes/nuevas\ imagenes/vacas4.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -130,7 +135,7 @@ a {
 
 .logo-hereford {
     width: 8%;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .logo-hereford-chico {
@@ -139,7 +144,7 @@ a {
 
 .logo-cabana {
     width: 8%;
-    transition: all .3s;
+    transition: all 0.3s;
     clip-path: circle(47.9% at 50% 50%);
 }
 
@@ -168,7 +173,6 @@ a {
     margin-right: 4vw;
 }
 
-
 /* Section Descripcion */
 .descripcion {
     padding: 0;
@@ -186,7 +190,11 @@ a {
     padding-top: 2%;
     height: 80vh;
     background: rgb(31, 31, 47);
-    background: linear-gradient(100deg, rgba(8, 8, 17, 0.851) 53%, rgba(153, 238, 227, 0.288) 77%),
+    background: linear-gradient(
+            100deg,
+            rgba(8, 8, 17, 0.851) 53%,
+            rgba(153, 238, 227, 0.288) 77%
+        ),
         url(/imagenes/tranquera.jpeg);
     background-size: cover;
     background-position: center;
@@ -224,13 +232,15 @@ a {
     margin-top: 20vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     background-color: #bae2f4;
     align-items: center;
     background: rgb(52, 52, 82);
-    background: linear-gradient(140deg,
+    background: linear-gradient(
+            140deg,
             rgba(32, 39, 51, 0.912) 13%,
-            rgba(32, 43, 42, 0.732) 60%),
+            rgba(32, 43, 42, 0.732) 60%
+        ),
         url(/imagenes/destacada1.jpg);
     background-size: cover;
     background-position: center;
@@ -267,9 +277,9 @@ a {
 }
 
 .destacado-img {
-    width: 17%;
-    height: 150%;
-    margin-top: -25px;
+    width: 22%;
+    height: 180%;
+    margin-top: -40px;
     margin-left: -35px;
 }
 
@@ -283,8 +293,10 @@ a {
 }
 
 .destacado-p {
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.6rem + 1vw);
+    font-weight: bold;
     padding: calc(0.2rem + 1%);
+    font-family: "Ibarra Real Nova", serif;
 }
 
 /* BANNER */
@@ -293,9 +305,11 @@ a {
     display: flex;
     justify-content: center;
     max-height: 65vh;
-    background: linear-gradient(140deg,
+    background: linear-gradient(
+            140deg,
             rgba(32, 39, 51, 0.912) 13%,
-            rgba(32, 43, 42, 0.732) 60%),
+            rgba(32, 43, 42, 0.732) 60%
+        ),
         url(/imagenes/vacas3.jpeg);
     background-size: cover;
     background-position: top;
@@ -318,7 +332,7 @@ a {
 .link-botton-banner {
     position: relative;
     bottom: 37%;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .link-botton-banner button {
@@ -334,13 +348,13 @@ a {
 }
 
 .btn {
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .fa-arrow-right {
     margin-right: -8%;
     margin-left: 8%;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .link-botton-banner button:hover {
@@ -358,9 +372,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(140deg,
+    background: linear-gradient(
+            140deg,
             rgba(32, 39, 51, 0.912) 13%,
-            rgba(32, 43, 42, 0.863) 60%),
+            rgba(32, 43, 42, 0.863) 60%
+        ),
         url(/imagenes/fondo1.jpg);
     background-size: cover;
     background-position: right;
@@ -424,7 +440,7 @@ a {
 .contenedor-card {
     width: 20%;
     height: 160px;
-    background-color: #FFD700;
+    background-color: #ffd700;
     border: 1px;
     border-top-left-radius: 15em 1em;
     border-bottom-right-radius: 15em 1em;
@@ -442,7 +458,7 @@ a {
 
 .contenedor-card p {
     color: #1b1919;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: bold;
     padding-top: 10%;
     font-size: calc(0.45rem + 1vw);
@@ -560,7 +576,7 @@ a {
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
     padding: 0 5px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .link-llamar:hover {
@@ -570,7 +586,7 @@ a {
 
 .link-llamar i {
     padding-left: 10%;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .link-wsp {
@@ -585,7 +601,7 @@ a {
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1vw);
     padding: 0 5px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .link-wsp:hover {
@@ -595,7 +611,7 @@ a {
 
 .link-wsp i {
     padding-left: 10%;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .author {
@@ -621,20 +637,20 @@ a {
     font-family: var(--bs-body-font-family);
     font-size: calc(0.3rem + 1.2vw);
     padding: 0 5px;
-    transition: all .3s;
+    transition: all 0.3s;
     position: fixed;
     border: 2px solid #f0f8ff;
     z-index: 20;
 }
 
-.btn-celu-wpp{
+.btn-celu-wpp {
     width: 40px;
     position: fixed;
     top: 92%;
     left: 86%;
     z-index: 20;
 }
-.btn-celu-wpp a img{
+.btn-celu-wpp a img {
     width: 100%;
 }
 
@@ -643,7 +659,6 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 1%;
-
 }
 
 .btn-fijo-wpp:hover {
@@ -654,46 +669,44 @@ a {
     color: #f0f8ff;
 }
 
-
 /*** MEDIA QUERIES ***/
 /** Max-width 1000px **/
 @media (max-width: 1000px) {
-    
-    .descripcion{
+    .descripcion {
         padding-top: 19vh;
     }
 
-    .descripcion-container{
+    .descripcion-container {
         height: 50vh;
     }
-    
-    .separador-carrusel{
+
+    .separador-carrusel {
         height: 128px;
     }
 
-    .contenedor-foto-cards{
+    .contenedor-foto-cards {
         width: 100%;
     }
-    
-    .logros{
-        padding:0;
+
+    .logros {
+        padding: 0;
         height: 55vh;
         margin-bottom: 80px;
     }
 
-    .destacado-card{
+    .destacado-card {
         height: 8vh;
     }
 
-    .btn-fijo-wpp{
+    .btn-fijo-wpp {
         left: 82%;
         width: 16vw;
     }
 
-    .footer{
+    .footer {
         min-height: 42vh;
     }
-    .link-llamar{
+    .link-llamar {
         width: 17vw;
     }
 }
@@ -753,7 +766,12 @@ a {
 
     .descripcion-container {
         height: 38vh;
-        background: linear-gradient(100deg, rgba(26, 26, 44, 0.851) 100%, rgba(153, 238, 227, 0.288) 77%), url(/imagenes/tranquera.jpeg);
+        background: linear-gradient(
+                100deg,
+                rgba(26, 26, 44, 0.851) 100%,
+                rgba(153, 238, 227, 0.288) 77%
+            ),
+            url(/imagenes/tranquera.jpeg);
     }
 
     .info-empresa {
@@ -793,10 +811,10 @@ a {
     }
 
     .destacado-img {
-        width: 17%;
-        height: 160%;
-        margin-top: -25px;
-        margin-left: -35px;
+        width: 40%;
+        height: 150%;
+        margin-top: -18px;
+        margin-left: -25px;
     }
 
     .img-derecha {
@@ -837,9 +855,9 @@ a {
     }
 
     .destacado-img {
-        width: 150px;
-        height: 140px;
-        margin-top: -25px;
+        width: 40%;
+        height: 150%;
+        margin-top: -18px;
         margin-left: -25px;
     }
 
@@ -884,12 +902,10 @@ a {
         width: 16vw;
         left: 82%;
     }
-
 }
 
 /** Max-width 500px **/
 @media (max-width: 500px) {
-
     /* Navbar */
     .nav-link-imagen {
         width: 40vw;
@@ -969,15 +985,15 @@ a {
     }
 
     .destacado-img {
-        width: 35%;
-        height: 160%;
-        margin-top: -20px;
-        margin-left: -15px;
+        width: 40%;
+        height: 150%;
+        margin-top: -18px;
+        margin-left: -25px;
     }
 
     .img-derecha {
         margin-left: 0px;
-        margin-right: -15px;
+        margin-right: -25px;
     }
 
     .btn-fijo-wpp {
