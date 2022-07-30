@@ -699,7 +699,7 @@ p, h1, h2, h3, h4, h5 {
     .logros {
         padding: 0;
         height: 55vh;
-        margin-bottom: 80px;
+        margin-bottom: 185px;
     }
 
     .destacado-card {
@@ -716,6 +716,10 @@ p, h1, h2, h3, h4, h5 {
     }
     .link-llamar {
         width: 17vw;
+    }
+
+    .author{
+        margin-top: 40px;
     }
 }
 
