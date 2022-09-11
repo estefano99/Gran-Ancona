@@ -609,7 +609,7 @@ p, h1, h2, h3, h4, h5 {
     border-radius: 25px;
     text-align: center;
     font-family: var(--bs-body-font-family);
-    font-size: calc(0.3rem + 1vw);
+    font-size: calc(0.28rem + 1vw);
     padding: 0 5px;
     transition: all 0.3s;
 }
@@ -1104,5 +1104,19 @@ p, h1, h2, h3, h4, h5 {
 
     .parrafo {
         font-size: calc(0.65rem + 1vw);
+    }
+}
+
+@media (max-width: 500px) and (max-height: 628px) {
+    .descripcion-container {
+        height: 100vh;
+    }
+
+    .descripcion {
+        margin-bottom: 370px;
+    }
+    
+    .destacado-card {
+        height: 13vh;
     }
 }
