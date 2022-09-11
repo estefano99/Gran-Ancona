@@ -112,7 +112,7 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .carrusel-texto p {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.3rem + 1.1vw);
     text-align: center;
     font-family: "Ibarra Real Nova", serif;
 }
@@ -1006,9 +1006,13 @@ p, h1, h2, h3, h4, h5 {
     .carrusel-texto {
         position: static;
         margin-top: 0%;
-        padding: 0 2%;
+        padding: 0 3%;
         right: 0%;
         width: 100%;
+    }
+
+    .carrusel-texto p {
+        font-size: calc(0.8rem + 1vw)
     }
 
     /* Banner tienda */
