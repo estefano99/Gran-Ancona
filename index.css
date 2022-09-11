@@ -808,8 +808,8 @@ p, h1, h2, h3, h4, h5 {
         height: 54vh;
         background: linear-gradient(
                 100deg,
-                rgba(26, 26, 44, 0.851) 100%,
-                rgba(153, 238, 227, 0.288) 77%
+                rgba(24, 24, 29, 0.9) 100%,
+                rgba(0, 0, 0, 0.25) 77%
             ),
             url(/imagenes/tranquera.jpeg);
     }
@@ -1080,5 +1080,29 @@ p, h1, h2, h3, h4, h5 {
     /* Footer */
     .author {
         margin-top: 0;
+    }
+
+    /* Contactos */
+    .largo {
+        width: 35%;
+    }
+}
+
+@media (max-height: 668px) {
+    .descripcion-container {
+        height: 90vh;
+    }
+
+    .descripcion {
+        margin-bottom: 350px;
+        padding-top: 20vh;
+    }
+    
+    .destacado-card {
+        height: 11vh;
+    }
+
+    .parrafo {
+        font-size: calc(0.65rem + 1vw);
     }
 }
