@@ -967,7 +967,7 @@ p, h1, h2, h3, h4, h5 {
         padding: 0 5% 0 5%;
         background-size: cover;
         background-position: right;
-        background-attachment: fixed;
+        background-attachment: scroll;
         clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     }
 
@@ -985,6 +985,9 @@ p, h1, h2, h3, h4, h5 {
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
+        background-attachment: scroll;
+        background-position: top;
+        background-size: auto;
     }
 
     .separador-carrusel {
@@ -1018,6 +1021,7 @@ p, h1, h2, h3, h4, h5 {
     /* Destacado */
     .destacado {
         padding-bottom: 50px;
+        background-attachment: scroll;
     }
 
     .destacado-feature {
@@ -1056,6 +1060,7 @@ p, h1, h2, h3, h4, h5 {
     /* Logros */
     .logros {
         margin-bottom: 100px;
+        background-attachment: scroll;
     }
 
     .logro-año {
