@@ -7,6 +7,7 @@ const logo_hereford = document.querySelector('.logo-hereford');
 const logo_cabana = document.querySelector('.logo-cabana');
 const btn_fijo_wpp = document.querySelector('.btn-fijo-wpp');
 const btn_celu_wpp = document.querySelector('.btn-celu-wpp');
+const carrusel_texto = document.querySelector('.carrusel-texto');
 
 let x = window.innerWidth;
 
@@ -38,10 +39,15 @@ function reconocerDispositivo() {
     if (x <= 500) {
         btn_fijo_wpp.style.display = "none";
         btn_celu_wpp.style.display = "block";
+
+        carrusel_texto.innerHTML = '<p>A continuación se presentan imágenes de nuestros animales, logros, y de quienes forman parte de <strong>Gran Ancona SA.</strong></p>';
     }else{
         btn_fijo_wpp.style.display = "block";
         btn_celu_wpp.style.display = "none";
+
+        carrusel_texto.innerHTML = '<p>Aquí se presentan imágenes de nuestros animales, logros, y de quienes forman parte de <strong>Gran Ancona SA.</strong></p>';
     }
+
 }
 
 function setSticky() {
