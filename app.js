@@ -7,6 +7,10 @@ const logo_cabana = document.querySelector('.logo-cabana');
 const btn_fijo_wpp = document.querySelector('.btn-fijo-wpp');
 const btn_celu_wpp = document.querySelector('.btn-celu-wpp');
 const carrusel_texto = document.querySelector('.carrusel-texto');
+const link_wsp_cel1 = document.querySelector('.link-wsp-cel1');
+const link_wsp_cel2 = document.querySelector('.link-wsp-cel2');
+const link_wsp_pc1 = document.querySelector('.link-wsp-pc1');
+const link_wsp_pc2 = document.querySelector('.link-wsp-pc2');
 
 let x = window.innerWidth;
 
@@ -31,11 +35,26 @@ function reconocerDispositivo() {
         btn_fijo_wpp.style.display = "none";
         btn_celu_wpp.style.display = "block";
 
+        // Reconoce si es mobile, aparece solo el icono de wsp en contactos
+        link_wsp_pc1.style.display = 'none';
+        link_wsp_pc2.style.display = 'none';
+        
+        link_wsp_cel1.style.display = 'flex';
+        link_wsp_cel2.style.display = 'flex';
+
         // El texto cambia dependiendo de si es celu o pc
         carrusel_texto.innerHTML = '<p>A continuación se presentan imágenes de nuestros animales, logros, y de quienes forman parte de <strong>Gran Ancona SA.</strong></p>';
-    }else{
+    
+    } else {
         btn_fijo_wpp.style.display = "block";
         btn_celu_wpp.style.display = "none";
+
+        // Reconoce si es pc, aparece el icono con whatsapp en contactos
+        link_wsp_pc1.style.display = 'flex';
+        link_wsp_pc2.style.display = 'flex';
+        
+        link_wsp_cel1.style.display = 'none';
+        link_wsp_cel2.style.display = 'none';
 
         // El texto cambia dependiendo de si es celu o pc
         carrusel_texto.innerHTML = '<p>Aquí se presentan imágenes de nuestros animales, logros, y de quienes forman parte de <strong>Gran Ancona SA.</strong></p>';
