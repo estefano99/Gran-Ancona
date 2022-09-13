@@ -950,7 +950,7 @@ p, h1, h2, h3, h4, h5 {
     }
 
     .link-wsp-cel {
-        margin-left: 5%;
+        margin-left: 4%;
     }
 
     .fa-whatsapp {
@@ -1149,5 +1149,17 @@ p, h1, h2, h3, h4, h5 {
     .destacado-p {
         font-size: calc(0.42rem + 1vw);
         padding: calc(0.15rem + 1%);
+    }
+}
+
+@media (max-width: 400px) {
+    .link-llamar {
+        font-size: calc(0.30rem + 1vw);
+        width: 28%;
+        height: 25px;
+    }
+
+    .link-wsp-cel-img {
+        width: 80%;
     }
 }
